@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
+    <title>Etch-a-Sketch | Developed by Dani D. Djaoen</title>
     <link rel="stylesheet" href="assets/styles/clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Etch-a-Sketch</h1>
+        <div id="all-options-box">
+            <div id="main-options-box" class="options-box">
+                <button class="options" id="option-clear"><i class="fas fa-trash-alt"></i></button>
+                <button class="options" id="option-resize"><i class="fas fa-expand-arrows-alt"></i></button>
+            </div>
+            <div id="color-options-box" class="options-box">
+                <button class="options" id="option-black"><i class="fas fa-brush"></i></button>
+                <button class="options" id="option-red"><i class="fas fa-brush"></i></button>
+                <button class="options" id="option-green"><i class="fas fa-brush"></i></button>
+                <button class="options" id="option-blue"><i class="fas fa-brush"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="gridbox"></div>
+    </main>
+    <footer></footer>
     <script src="assets/scripts/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+html {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header {
+    margin-top: 10px;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+}
+.options.selected-color {
+    opacity: 0.5;
+}
+.options:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+#all-options-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    width: 35vw;
+    margin: auto;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+#main-options-box {
+    text-align: start;
+}
+#color-options-box {
+    text-align: end;
+}
+.options {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+#option-black {
+    color: rgba(0, 0, 0, 0.8);
+}
+#option-red {
+    color: rgba(255, 0, 0, 0.8);
+}
+#option-blue {
+    color: rgba(0, 0, 255, 0.8);
+}
+#option-green {
+    color: rgba(0, 128, 0, 0.8);
+}
+#gridbox {
+    width: 35vw;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    border-width: 15px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-radius: 10px;
+}
+.grids {
+    background-color: white;
+    padding: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
