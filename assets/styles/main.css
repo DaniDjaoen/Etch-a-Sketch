@@ -19,9 +19,8 @@ h1 {
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 #all-options-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 35vw;
     margin: auto;
@@ -38,6 +37,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px 15px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 #option-black {
     color: rgba(0, 0, 0, 0.8);
@@ -54,8 +54,7 @@ h1 {
 #gridbox {
     width: 35vw;
     height: auto;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto;
     border-width: 15px;
     border-color: rgba(255, 255, 255, 0.5);
     border-style: solid;
@@ -65,4 +64,51 @@ h1 {
     background-color: white;
     padding: 50%;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+footer p {
+    text-align: center;
+}
+footer a {
+    opacity: 0.5;
+}
+@media (max-width: 1024px) {
+    #all-options-box, #gridbox {
+        width: 50vw;
+    }
+}
+@media (max-width: 768px) {
+    #all-options-box, #gridbox {
+        width: 60vw;
+    }
+}
+@media (max-width: 550px) {
+    #main-options-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
+    #color-options-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
+}
+@media (max-width: 375px) {
+    #all-options-box, #gridbox {
+        width: 80vw;
+    }
+    #main-options-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
+    #color-options-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+    }
 }
